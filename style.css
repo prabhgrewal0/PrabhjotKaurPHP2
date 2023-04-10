@@ -1,0 +1,222 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightcoral;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .brand-logo {
+    text-align: center;
+    flex: 1;
+}
+
+nav .brand-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 60px;
+    text-decoration: none;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.brand-logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Main content */
+main {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+/* Form styling */
+form {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    
+}
+.signinform, .loginform{
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signup {
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #888;
+    background-color: #444;
+    color: #f0f0f0;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #f0f0f0;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+form p {
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.review-image {
+    flex: 1;
+    text-align: center;
+}
+
+.review-content {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.edit-button {
+    margin-bottom: 10px;
+}
+.review-container {
+    position: relative;
+}
+
+.delete-button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin-left: 50%;
+    text-align: center;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.edit-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.review-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Add this line */
+}
+
+.delete-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; /* Add this line */
+}
+
+/* Add or modify these rules in your CSS */
+.review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.review-image {
+    flex: 1;
+    text-align: center;
+}
+
+.review-content {
+    flex: 2;
+    padding: 0 20px;
+}
